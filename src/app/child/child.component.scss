@@ -1,0 +1,68 @@
+.head_value{
+    color:whitesmoke;
+    font-family:Acme;
+    font-size:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+
+    border-radius: 20px;
+     width:200px;
+     height:30px;
+}
+button{
+    margin:10px;
+    border-radius: 50px;
+    font-size: medium;
+    font-weight:bold;
+    font-family: Acme;
+    background-color: rgb(161, 240, 143);
+}
+.container{
+ background: url("https://wallpapers.com/images/hd/soccer-field-background-1920-x-1080-v1ms70i39l96fqvr.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.container_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Acme;
+    font-weight: bold;
+    height:100vh;
+    margin-left:400px;
+    margin-right:400px;
+    background-color: rgba(247, 241, 241, 0.5);
+}
+
+button:hover{
+    background-color: rgb(16, 167, 76);
+}
+
+#body_bind {
+    font-size: 16px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 220vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  .teamList{
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+  }
+  .team{
+    margin: 80px;
+  }
+  
+  
