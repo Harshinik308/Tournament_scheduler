@@ -3,34 +3,25 @@
     <div class="head_value">
     <span>Tournament Scheduler</span>
     </div>
-    <form class="container_1" >
-    <label for="no1">Team 1</label>
-    <input type="text" id="no1" #no1 required>
-    <label for="no2">Team 2</label>
-    <input type="text" id="no2" #no2 required>
-    <label for="no3">Team 3</label>
-    <input type="text" id="no3" #no3 required>
-    <label for="no4">Team 4</label>
-    <input type="text" id="no4" #no4 required>
-    <label for="no5">Team 5</label>
-    <input type="text" id="no5" #no5 required>
-    <label for="no6">Team 6</label>
-    <input type="text" id="no6" #no6 required>
-    <label for="date">Date</label>
-    <input type="date" id="date" #date required>
-    <label for="team">No of teams per day</label>
-    <input type="number" id="team" #team required>
-    <button (click)="onClick(
-    no1.value,
-    no2.value,
-    no3.value,
-    no4.value,
-    no5.value,
-    no6.value,
-    date.value,
-    team.value
-    )" id="btn" type="button">Create Schedule</button>
-    </form>
+    <form class="container_1">
+        <label for="no1">Team 1</label>
+        <input type="text" id="no1" [(ngModel)]="formVal.team_1" name="team_1" #no1 required>
+        <label for="no2">Team 2</label>
+        <input type="text" id="no2" [(ngModel)]="formVal.team_2" name="team_2" #no2 required>
+        <label for="no3">Team 3</label>
+        <input type="text" id="no3" [(ngModel)]="formVal.team_3" name="team_3" #no3 required>
+        <label for="no4">Team 4</label>
+        <input type="text" id="no4" [(ngModel)]="formVal.team_4" name="team_4" #no4 required>
+        <label for="no5">Team 5</label>
+        <input type="text" id="no5" [(ngModel)]="formVal.team_5" name="team_5" #no5 required>
+        <label for="no6">Team 6</label>
+        <input type="text" id="no6" [(ngModel)]="formVal.team_6" name="team_6" #no6 required>
+        <label for="date">Date</label>
+        <input type="date" id="date" [(ngModel)]="formVal.date" name="date" #date required>
+        <label for="team">No of teams per day</label>
+        <input type="number" id="team" [(ngModel)]="formVal.number" name="number" #team required>
+        <button (click)="deleteOutputSchedule();onClick(no1.value, no2.value, no3.value, no4.value, no5.value, no6.value, date.value, team.value);createSchedule();createOutputSchedule()" id="btn" type="button">Create Schedule</button>
+      </form>      
 </div>
 <div class="team">
 <div *ngFor="let teams of arr;index as i;" class="teamList">

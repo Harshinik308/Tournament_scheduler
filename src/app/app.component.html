@@ -1,3 +1,76 @@
 <div>
 <app-child></app-child>
 </div>
+
+<button (click)="ViewSchedule()">View</button>
+<table>
+    <tr>
+        <th>id</th>
+        <th>T1</th>
+        <th>T2</th>
+        <th>T3</th>
+        <th>T4</th>
+        <th>T5</th>
+        <th>T6</th>
+        <th>Number</th>
+        <th>Date</th>
+        <th>C1</th>
+        <th>C2</th>
+        <th>C3</th>
+        <th>C4</th>
+        <th>C5</th>
+        <th>C6</th>
+        <th>C7</th>
+        <th>C8</th>
+        <th>C9</th>
+        <th>C10</th>
+        <th>C11</th>
+        <th>C12</th>
+        <th>C13</th>
+        <th>C14</th>
+        <th>C15</th>
+    </tr>
+</table>
+<div *ngFor="let i of Schedule">
+   <tr>
+    <td>{{i.id}}</td>
+    <td>{{i.team_1}}</td>
+    <td>{{i.team_2}}</td>
+    <td>{{i.team_3}}</td>
+    <td>{{i.team_4}}</td>
+    <td>{{i.team_5}}</td>
+    <td>{{i.team_6}}</td>
+    <td>{{i.number}}</td>
+    <td>{{i.date}}</td>
+    <td>{{i.c1}}</td>
+    <td>{{i.c2}}</td>
+    <td>{{i.c3}}</td>
+    <td>{{i.c4}}</td>
+    <td>{{i.c5}}</td>
+    <td>{{i.c6}}</td>
+    <td>{{i.c7}}</td>
+    <td>{{i.c8}}</td>
+    <td>{{i.c9}}</td>
+    <td>{{i.c10}}</td>
+    <td>{{i.c11}}</td>
+    <td>{{i.c12}}</td>
+    <td>{{i.c13}}</td>
+    <td>{{i.c14}}</td>
+    <td>{{i.c15}}</td>
+   </tr>
+</div>
+
+<button (click)="getOutputSchedule()">View Output</button>
+<div>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Combination</th>
+        </tr>
+        <tr *ngFor="let i of output">
+            <td>{{i.date}}</td>
+            <td>{{i.combination}}</td>
+        </tr>
+    </table>
+</div>
+

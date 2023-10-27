@@ -5,10 +5,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px;
 }
-
 input{
-
     border-radius: 20px;
      width:200px;
      height:30px;
@@ -33,10 +32,14 @@ button{
     justify-content: center;
     font-family: Acme;
     font-weight: bold;
-    height:100vh;
-    margin-left:400px;
-    margin-right:400px;
+    min-height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    // margin-left:400px;
+    // margin-right:400px;
     background-color: rgba(247, 241, 241, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
 }
 
 button:hover{
